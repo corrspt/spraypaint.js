@@ -19,7 +19,8 @@
     "strict": true,
     "sourceMap": true,
     "declaration": true,
-    "inlineSourceMap": false
+    "inlineSourceMap": false,
+    "skipLibCheck": true
   },
   "formatCodeOptions": {
     "indentSize": 2,
