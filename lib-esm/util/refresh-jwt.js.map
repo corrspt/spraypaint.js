@@ -1,0 +1,1 @@
+{"version":3,"file":"refresh-jwt.js","sourceRoot":"","sources":["../../src/util/refresh-jwt.ts"],"names":[],"mappings":"AAEA,MAAM,CAAC,IAAM,UAAU,GAAG,UACxB,KAA4B,EAC5B,cAAwB;IAExB,IAAM,GAAG,GAAG,cAAc,CAAC,OAAO,CAAC,GAAG,CAAC,OAAO,CAAC,CAAA;IAE/C,IAAI,GAAG,EAAE;QACP,KAAK,CAAC,MAAM,CAAC,GAAG,CAAC,CAAA;KAClB;AACH,CAAC,CAAA"}
