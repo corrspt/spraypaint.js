@@ -83,6 +83,13 @@ var Deserializer = /** @class */ (function () {
         instance.assignLinks(datum.links);
         // assign meta
         instance.setMeta(datum.meta, false);
+        // Register instances that may come from included section
+        var instanceType = instance.klass.jsonapiType || '';
+        if (instanceType) {
+            if (!this.registry.get(instanceType)) {
+                this.registry.register(instanceType, instance.klass);
+            }
+        }
         // so we don't double-process the same thing
         // must push before relationships
         this._deserialized.push(instance);
