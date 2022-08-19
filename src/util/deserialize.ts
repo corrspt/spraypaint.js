@@ -136,6 +136,14 @@ class Deserializer {
     // assign meta
     instance.setMeta(datum.meta, false)
 
+    // Register instances that may come from included section
+    const instanceType: string = instance.klass.jsonapiType || ""
+    if (instanceType) {
+      if (!this.registry.get(instanceType)) {
+        this.registry.register(instanceType, instance.klass)
+      }
+    }
+
     // so we don't double-process the same thing
     // must push before relationships
     this._deserialized.push(instance)
